@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Hitori",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.26",
+  "runtime-version": "3.30",
   "sdk": "org.gnome.Sdk",
   "command": "hitori",
   "finish-args":
@@ -16,11 +16,6 @@
       "--talk-name=ca.desrt.dconf",
       "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
-  "build-options" :
-    {
-      "cflags": "-O2 -g",
-      "cxxflags": "-O2 -g"
-    },
   "cleanup":
     [
       "/include", "/lib/pkgconfig",
@@ -38,7 +33,8 @@
           [
             {
               "type": "git",
-              "url": "https://git.gnome.org/browse/hitori",
+              "url": "https://gitlab.gnome.org/GNOME/hitori.git",
+              "tag": "3.22.4",
               "commit": "4515af09f31b09e4d16b8b11b7b660d2f81bb351"
             }
           ]
