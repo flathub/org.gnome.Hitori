@@ -9,7 +9,8 @@
       /* X11 + XShm access */
       "--share=ipc", "--socket=x11",
       /* Wayland access */
-      "--socket=wayland"
+      "--socket=wayland",
+      "--metadata=X-DConf=migrate-path=/org/gnome/hitori/"
     ],
   "cleanup":
     [
