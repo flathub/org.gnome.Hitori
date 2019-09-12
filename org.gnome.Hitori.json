@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Hitori",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.30",
+  "runtime-version": "3.34",
   "sdk": "org.gnome.Sdk",
   "command": "hitori",
   "finish-args":
@@ -9,12 +9,7 @@
       /* X11 + XShm access */
       "--share=ipc", "--socket=x11",
       /* Wayland access */
-      "--socket=wayland",
-      /* Needed for dconf to work */
-      "--filesystem=xdg-run/dconf",
-      "--filesystem=~/.config/dconf:ro",
-      "--talk-name=ca.desrt.dconf",
-      "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+      "--socket=wayland"
     ],
   "cleanup":
     [
@@ -29,13 +24,14 @@
     [
       {
         "name": "hitori",
+        "buildsystem": "meson",
         "sources":
           [
             {
               "type": "git",
               "url": "https://gitlab.gnome.org/GNOME/hitori.git",
-              "tag": "3.22.4",
-              "commit": "4515af09f31b09e4d16b8b11b7b660d2f81bb351"
+              "tag": "3.34.0",
+              "commit": "8859bfe3ecd8a4c3ee198ef62f211a09b5cfbd0a"
             }
           ]
       }
