@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Hitori",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
+  "runtime-version": "3.36",
   "sdk": "org.gnome.Sdk",
   "command": "hitori",
   "finish-args":
@@ -31,8 +31,8 @@
             {
               "type": "git",
               "url": "https://gitlab.gnome.org/GNOME/hitori.git",
-              "tag": "3.34.0",
-              "commit": "8859bfe3ecd8a4c3ee198ef62f211a09b5cfbd0a"
+              "tag": "3.36.0",
+              "commit": "2ef8bc470391b67e4197ac0370bcd076b6cdabe3"
             }
           ]
       }
