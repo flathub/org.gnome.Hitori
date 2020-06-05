@@ -29,10 +29,9 @@
         "sources":
           [
             {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/hitori.git",
-              "tag": "3.36.0",
-              "commit": "2ef8bc470391b67e4197ac0370bcd076b6cdabe3"
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/hitori/3.36/hitori-3.36.0.tar.xz",
+              "sha256": "456f76faed46287e2c53ec468c0aa6293bb6d92ca285baa0d573d795d1960157"
             }
           ]
       }
