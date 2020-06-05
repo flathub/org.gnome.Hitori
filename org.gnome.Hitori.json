@@ -7,19 +7,10 @@
   "finish-args":
     [
       /* X11 + XShm access */
-      "--share=ipc", "--socket=x11",
+      "--share=ipc", "--socket=fallback-x11",
       /* Wayland access */
       "--socket=wayland",
       "--metadata=X-DConf=migrate-path=/org/gnome/hitori/"
-    ],
-  "cleanup":
-    [
-      "/include", "/lib/pkgconfig",
-      "/share/pkgconfig", "/share/aclocal",
-      "/man", "/share/man", "/share/gtk-doc",
-      "*.la", "*.a",
-      "/lib/girepository-1.0",
-      "/share/dbus-1", "/share/doc", "/share/gir-1.0"
     ],
   "modules":
     [
@@ -29,10 +20,9 @@
         "sources":
           [
             {
-              "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/hitori.git",
-              "tag": "3.36.0",
-              "commit": "2ef8bc470391b67e4197ac0370bcd076b6cdabe3"
+              "type": "archive",
+              "url": "https://download.gnome.org/sources/hitori/3.36/hitori-3.36.0.tar.xz",
+              "sha256": "456f76faed46287e2c53ec468c0aa6293bb6d92ca285baa0d573d795d1960157"
             }
           ]
       }
