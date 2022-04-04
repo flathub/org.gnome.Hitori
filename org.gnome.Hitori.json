@@ -1,7 +1,7 @@
 {
   "app-id": "org.gnome.Hitori",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "40",
+  "runtime-version": "42",
   "sdk": "org.gnome.Sdk",
   "command": "hitori",
   "finish-args":
@@ -21,8 +21,8 @@
           [
             {
               "type": "archive",
-              "url": "https://download.gnome.org/sources/hitori/3.38/hitori-3.38.2.tar.xz",
-              "sha256": "c2643573037f6a7b16e9208aedee8691026f081abaaa160942edb52f09029cac"
+              "url": "https://download.gnome.org/sources/hitori/3.38/hitori-3.38.3.tar.xz",
+              "sha256": "f7d7103cb0633fb013730131a98c3ae3a2162b9fb9499fc7f19512d581bf6569"
             }
           ]
       }
